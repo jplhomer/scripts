@@ -37,7 +37,7 @@ cd /tmp/plugin/*
 # find name & version number
 PLUGIN_DIR="$PWD"
 NAME=${PWD##*/}
-VERSION=$(cat *.php | grep "^Version: \(.*\)" | tr ' ' '\n' | tail -1)
+VERSION=$(cat *.php | grep "Version: \(.*\)" | tr ' ' '\n' | tail -1)
 
 if [[ -z "$VERSION" ]]; then
 	echo "Unable to find version number - is the package corrupt?"
