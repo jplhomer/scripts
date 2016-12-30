@@ -42,9 +42,9 @@ if [[ -e "readme.txt" ]]; then
 fi;
 
 dvk-build languages
-dvk-build assets
 dvk-build autoloader
 wp-bump-version $VERSION
+dvk-build assets
 
 # Add untracked changes
 if [[ -e ".git" ]]; then
